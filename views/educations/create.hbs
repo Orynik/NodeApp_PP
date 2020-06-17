@@ -1,12 +1,12 @@
 <h2>Создание нового вида обучения</h2>
 <form action="/create" method="post">
     <div class="input-field">
-       <input type="text" name = "NameOfEducation" >
-       <label>Вид обучен<label>
+       <input type="text" name = "NameOfEducation" id = "name" class = "validate">
+       <label for = "name" class= "active">Вид обучения<label>
     </div>
     <div class="input-field">
         <input type="Number" name = "Price">
-        <label>Цена</label>
+        <label class= "active">Цена</label>
     </div>
     <button type="submit" class = "btn">Отправить</button>
 </form>

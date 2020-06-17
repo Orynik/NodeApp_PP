@@ -2,16 +2,16 @@
 <form action="/edit" method="post">
     <div class="input-field">
         <input type="text" name = "NameOfEducation" value = "{{education.NameOfEducation}}" >
-        <label>Вид обучения</label>
+        <label class = "active">Вид обучения</label>
     </div>
     <div class="input-field">
         <input type="Number" name = "Price" value = "{{education.Price}}">
-        <label>Цена</label>
+        <label class = "active">Цена</label>
     </div>
         <div class="input-field">
         <input type="text" name = "Image" value = "{{education.Image}}">
-        <label>Изображение</label>
+        <label class = "active">Изображение</label>
     </div>
-     <input type= "text" name = "_id" value = "{{education._id}}" hidden>
     <button type="submit" class = "btn">Изменить</button>
+    <a href = "/education/" class = "btn">Вернуться назад</a>
 </form>

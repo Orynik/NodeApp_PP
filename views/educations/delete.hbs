@@ -1,14 +1,16 @@
 <h2>Вид обучения</h2>
 <h4>Вы действительно хотите удалить вид обучения?</h4>
-<h5>{{education._id}}</h5>
 <hr>
-    <form action="/delete" method="Post" class = "container-data">
-        <div class="input-field">
-            <input type="text" name = "NameOfEducation" value = "{{education.NameOfEducation}}" readonly>
-        </div>
-        <div class="input-field">
-            <input type="Number" name = "Price" value = "{{education.Price}}" readonly>
-        </div>
-        <input type= "text" name = "_id" value = "{{education._id}}" hidden>
-        <button type="submit" class = "btn">Удалить</button>
-    </form>
+<form action="/delete" method="Post">
+    <div class="input-field">
+        <input type="text" name = "NameOfEducation" value = "{{education.NameOfEducation}}" readonly>
+        <label class = "active">Вид обучения:</label>
+    </div>
+    <div class="input-field">
+        <input type="Number" name = "Price" value = "{{education.Price}}" readonly>
+        <label class = "active">Цена:</label>
+    </div>
+    <input type= "text" name = "_id" value = "{{education._id}}" hidden>
+    <button type="submit" class = "btn">Удалить</button>
+    <a href = "/education/" class = "btn">Вернуться назад</a>
+</form>
