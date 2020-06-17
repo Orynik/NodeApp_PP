@@ -18,3 +18,12 @@ body{
 .crud-button{
     margin-bottom: 15px
 }
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-logo{
+    font-size: 30px;
+}

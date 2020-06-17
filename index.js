@@ -24,7 +24,6 @@ const hbs = handlebars_express.create({
 app.engine("hbs",hbs.engine)
 app.set('view engine', 'hbs')
 app.set('views','views')
-console.log(__dirname)
 app.use(express.static(__dirname + "/src/"))
 
 app.use(express.urlencoded({extended: true}))
