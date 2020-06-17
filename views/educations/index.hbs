@@ -2,12 +2,11 @@
 {{#if educations.length}}
 <ul>
   {{#each educations}}
-  {{{educations}}}
     <li class = "container-data">
       <span class = "data"><b class = "text">Вид обучения:</b> {{NameOfEducation}}</span>
       <span class = "data"><b class = "text">Цена:</b> {{this.Price}}</span>
         <div class = "crud-button">
-          <a href = "/education/edit" class = "btn btn-small">Редактировать</a>
+          <a href = "/education/edit/{{_id}}" class = "btn btn-small">Редактировать</a>
           <a href = "/education/delete/{{_id}}" class = "btn btn-small">Удалить</a>
           <a href = "/education/details/{{_id}}" class = "btn btn-small">Детали</a>
         </div>

@@ -61,4 +61,21 @@ router.post("/delete",async (req,res) => {
     )
 })
 
+router.get("/education/edit/:id", async (req,res) =>{
+    const educations = await education.findById(req.params.id)
+
+    res.render("educations/edit",{
+        title: "Редактировать",
+        education: educations
+    })
+})
+
+router.post("/edit",async (req,res) => {
+    education.findByIdAndUpdate(req.body._id,req.body).then(
+        () => {
+            res.redirect("/education")
+        }
+    )
+})
+
 module.exports = router;
