@@ -8,7 +8,6 @@ const routes = require("./routes/routes")
 
 //Env setting
 const PORT = process.env.PORT || 4444
-
 const app = express();
 
 //Registration Template Engine
@@ -22,8 +21,11 @@ const hbs = handlebars_express.create({
 })
 
 app.engine("hbs",hbs.engine)
+//Setting File extension
 app.set('view engine', 'hbs')
+//Setting folder for views files
 app.set('views','views')
+//Setting folder for staticfiles
 app.use(express.static(__dirname + "/src/"))
 
 app.use(express.urlencoded({extended: true}))
