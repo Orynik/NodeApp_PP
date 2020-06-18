@@ -1,0 +1,19 @@
+<h2>Учителя</h2>
+{{#if teachers.length}}
+<ul>
+  {{#each teachers}}
+    <li class = "container-data">
+      <span class = "data"><b class = "text">ФИО: </b> {{LastName}} {{FirstName}} {{MiddleName}}</span>
+      <span class = "data"><b class = "text">Специальность: </b> {{Specialization}}</span>
+      {{!-- <span class = "data"><b class = "text">Цена:</b> {{}}</span> --}}
+        <div class = "crud-button">
+          <a href = "/teachers/edit/{{_id}}" class = "btn btn-small">Редактировать</a>
+          <a href = "/teachers/delete/{{_id}}" class = "btn btn-small">Удалить</a>
+          <a href = "/teachers/details/{{_id}}" class = "btn btn-small">Детали</a>
+        </div>
+    </li>
+  {{/each}}
+</ul>
+{{else}}
+<p>Не добавлено новых видов обучения</p>
+{{/if}}

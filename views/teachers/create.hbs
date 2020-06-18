@@ -1,0 +1,28 @@
+<h2>Создание нового вида обучения</h2>
+<form action="/api/teacher/create" method="post">
+    <div class="input-field">
+       <input type="text" name = "LastName" id = "LastName" class = "validate">
+       <label for = "LastName" class= "active">Фамилия<label>
+    </div>
+    <div class="input-field">
+       <input type="text" name = "FirstName" id = "FirstName" class = "validate">
+       <label for = "FirstName" class= "active">Имя<label>
+    </div>
+    <div class="input-field">
+        <input type="text" name = "MiddleName" id = "MiddleName">
+        <label for = "MiddleName" class= "active">Отчество</label>
+    </div>
+    <div class="input-field">
+       <input type="number" name = "Age" id = "Age" class = "validate">
+       <label for = "Age" class= "active">Возраст<label>
+    </div>
+    <div class="input-field">
+       <input type="text" name = "Post" id = "Post" class = "validate">
+       <label for = "Post" class= "active">Должность<label>
+    </div>
+    <div class="input-field">
+       <input type="text" name = "Specialization" id = "Specialization" class = "validate">
+       <label for = "Specialization" class= "active">Специализация<label>
+    </div>
+    <button type="submit" class = "btn">Отправить</button>
+</form>

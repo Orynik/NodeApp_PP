@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 const handlebars_express = require("express-handlebars")
 const Handlebars = require('handlebars')
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
-const educationsRoutes = require("./routes/Educations")
+const routes = require("./routes/routes")
 
 //Env setting
 const PORT = process.env.PORT || 4444
@@ -28,7 +28,7 @@ app.use(express.static(__dirname + "/src/"))
 
 app.use(express.urlencoded({extended: true}))
 
-app.use(educationsRoutes)
+app.use(routes)
 
 //Backend
 

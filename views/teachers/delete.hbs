@@ -1,0 +1,16 @@
+<h2>Учителя</h2>
+<h4>Вы действительно хотите удалить вид обучения?</h4>
+<hr>
+<form action="/api/teacher/delete" method="Post">
+    <div class = "container-data">
+        <span class = "data"><b class = "text">Фамилия: </b> {{teacher.LastName}}</span>
+        <span class = "data"><b class = "text">Имя: </b> {{teacher.FirstName}}</span>
+        <span class = "data"><b class = "text">Отчество: </b> {{teacher.MiddleName}}</span>
+        <span class = "data"><b class = "text">Возраст: </b> {{teacher.Age}}</span>
+        <span class = "data"><b class = "text">Должность: </b> {{teacher.Post}}</span>
+        <span class = "data"><b class = "text">Специальность: </b> {{teacher.Specialization}}</span>
+    </div>
+    <input type= "text" name = "_id" value = "{{teacher._id}}" hidden>
+    <button type="submit" class = "btn">Удалить</button>
+</form>
+<a href = "/education/" class = "btn">Вернуться назад</a>

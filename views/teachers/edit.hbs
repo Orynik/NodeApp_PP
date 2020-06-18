@@ -1,0 +1,29 @@
+<h2>Редактирование вида обучения</h2>
+<form action="/api/teacher/edit" method="post">
+   <div class="input-field">
+       <input type="text" name = "LastName" id = "LastName" class = "validate" value = "{{teacher.LastName}}">
+       <label for = "LastName" class= "active">Фамилия<label>
+    </div>
+    <div class="input-field">
+       <input type="text" name = "FirstName" id = "FirstName" class = "validate" value = "{{teacher.FirstName}}">
+       <label for = "FirstName" class= "active">Имя<label>
+    </div>
+    <div class="input-field">
+        <input type="text" name = "MiddleName" id = "MiddleName" value = "{{teacher.MiddleName}}">
+        <label for = "MiddleName" class= "active">Отчество</label>
+    </div>
+    <div class="input-field">
+       <input type="number" name = "Age" id = "Age" class = "validate" value = "{{teacher.Age}}">
+       <label for = "Age" class= "active">Возраст<label>
+    </div>
+    <div class="input-field">
+       <input type="text" name = "Post" id = "Post" class = "validate" value = "{{teacher.Post}}">
+       <label for = "Post" class= "active">Должность<label>
+    </div>
+    <div class="input-field">
+       <input type="text" name = "Specialization" id = "Specialization" class = "validate" value = "{{teacher.Specialization}}">
+       <label for = "Specialization" class= "active">Специализация<label>
+    </div>
+    <button type="submit" class = "btn">Изменить</button>
+    <a href = "/teachers/" class = "btn">Вернуться назад</a>
+</form>
